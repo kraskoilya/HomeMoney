@@ -8,6 +8,8 @@ import { AuthModule } from './auth/auth.module';
 import { AppRoutingModule } from './app-routing.module';
 import { UserService } from './shared/services/user.service';
 import { AuthService } from './shared/services/auth.service';
+import { SystemModule } from './system/system.module';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { AuthService } from './shared/services/auth.service';
     BrowserModule,
     AuthModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    SystemModule
   ],
   providers: [UserService, AuthService],
   bootstrap: [AppComponent]
